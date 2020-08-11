@@ -9,14 +9,10 @@ import logo_swych from '../image/logo_swych.png';
 
 function Login() {
 
-    // const [accountID, setAccountID] = useState('5504601076791310')
+
     const [email, setEmail] = useState('')
     const [pwd, setPwd] = useState('')
     const [errMsg,setErrMsg] = useState('')
-    // const [clientSecret, setClientSecret] = useState('6hU2O@4]e-QIssTkYoiJ7?e6keKqkL*Y')
-    // const [clientID, setClientID] = useState('swych_b2b_caportal')
-    // const [apiKey, setApiKey] = useState('swych_b2b_caportal')
-    // const [userName, setUserName] = useState('56a28836-6743-4249-b22b-5e1a224b1693')
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event: any) => {
@@ -36,7 +32,6 @@ function Login() {
         localStorage.setItem('loginEmail', email)
         localStorage.setItem('pwd', pwd)
         console.warn('apiEndPoint ' + JSON.stringify(process))
-        // let payload = 'usn=swychsendportal@goswych.com&pwd=knn135188'
         let payload = `usn=${localStorage.getItem('loginEmail')}&pwd=${localStorage.getItem('pwd')}`
         localStorage.setItem('payload', payload)
         swychApiService.emailLogin(payload)
