@@ -1,0 +1,70 @@
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(22, 22, 22, 0.6);
+    z-index: 999;
+  }
+  /* .loader:before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    max-width: .001%;
+  } */
+  .loader img {
+    height: 100px;
+    top: 45%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  
+  
+  .modal.in{overflow-y: auto;}
+  .modal{overflow-x: hidden;overflow-y: auto;}
+  .modal{text-align:center;padding:0!important;}
+
+  .modal:before{display:inline-block;height:100%;vertical-align:middle;margin-right:-4px}
+.modal-content{border:0; z-index: 1;}
+ .modal-body{background:#f9f9f9;border: lightgray;}
+  .modal-footer .btn+.btn{margin:0} 
+  .modal-dialog{border:0;height:100%;display:inline-flex}
+ /* .modal-dialog{display:inline-block;text-align:left;vertical-align:middle;z-index: 1111;border:0;} */
+ 
+ 
+  /* .modal a.close{z-index:10;position:absolute;right:-15px;width:40px;height:40px;top:-15px;background:#c01f6d url(https://swychgift.com/static-content-images/close-icon.svg) no-repeat center center;border-radius:50%;opacity:1;background-size:24px} */ */
+  /* .modal .btn{width:100%;position:absolute;bottom:0;left:0;font-size:18px;height:50px;border-radius:0 0 5px 5px;padding-top:12px;text-transform:uppercase} */
+  .modal-footer{border:0;padding:0} */
+ .modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5 !important;
+  } 
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+  }
+  .modal.in {
+    overflow-y: hidden;
+  }
+  .fade.in {
+    opacity: 1;
+  }
+  
+
+  .modal-body {
+    background: #fff;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 5px #999; */
+    min-width: 600px;
+    padding: 20px 0;
+  } 
+ 

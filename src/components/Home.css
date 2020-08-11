@@ -1,0 +1,36 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height:50px
+ }
+
+ .backGround{
+    position: absolute;
+    background: url('https://storage.pixteller.com/designs/designs-images/2019-03-27/05/simple-background-backgrounds-passion-simple-1-5c9b95c3a34f9.png');
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+   
+ }
+
+
+ /* body{
+   background: #fff;
+   font-weight:normal;
+ }
+ .clearfix{clear: both;}
+  a,a:hover{text-decoration: none;}
+ input{outline: 0 !important;} */
+ 
+ 
+ 
+
