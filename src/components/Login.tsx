@@ -76,26 +76,6 @@ function Login() {
                                     <Form.Control.Feedback type="invalid">Please provide password.</Form.Control.Feedback>
                                 </Form.Group>
                                 <div style={{ color: "red" }}>{errMsg}</div><br />
-                                {/* 
-                                <Form.Group controlId="accountID">
-                                    <Form.Control required type="text" value = {accountID} onChange={(event:any)=>{setAccountID(event.target.value)}} placeholder="Enter account ID" />
-                                    <Form.Control.Feedback type="invalid">Please provide account ID.</Form.Control.Feedback>
-                                </Form.Group>
-
-                                <Form.Group controlId="formBasicPassword">
-                                    <Form.Control required type="password" value={clientSecret} onChange={(event:any)=>{setClientSecret(event.target.value)}} placeholder="Enter client secret" />
-                                    <Form.Control.Feedback type="invalid">Please provide client secret.</Form.Control.Feedback>
-                                </Form.Group>
-
-                                <Form.Group controlId="clientId">
-                                    <Form.Control required type="text" value={clientID} onChange={(event:any)=>{setClientID(event.target.value)}} placeholder="Enter client ID" />
-                                    <Form.Control.Feedback type="invalid">Please provide client Id.</Form.Control.Feedback>
-                                </Form.Group>
-
-                                <Form.Group controlId="apiKey">
-                                    <Form.Control required type="text" value ={apiKey} onChange={(event:any)=>{setApiKey(event.target.value)}} placeholder="Enter apiKey" />
-                                    <Form.Control.Feedback type="invalid">Please provide apiKey.</Form.Control.Feedback>
-                                </Form.Group> */}
 
                                 <Button style={{marginRight: "10px",backgroundColor: "#c01f6d", color: "white", border: "hidden"}} type="submit" >
                                     Log in
@@ -109,27 +89,6 @@ function Login() {
         </React.Fragment>
     )
 }
-
-
-// const handleLoginButtonClick = (accountID: string, clientSecret: string, clientId: string, apiKey: string) => {
-//     // let data = `grant_type=client_credentials&client_id=${userName}&client_secret=${pwd}&resource=3a8271ef-ef89-445c-bca2-a0a66d1afc52`
-
-//     let data = `grant_type=client_credentials&client_id=56a28836-6743-4249-b22b-5e1a224b1693&client_secret=${clientSecret}&resource=3a8271ef-ef89-445c-bca2-a0a66d1afc52&business_client_id=${clientId}&business_api_key=${apiKey}&swych_id=${accountID}`;
-//     localStorage.setItem('loginInfo', data)
-//     localStorage.setItem('accountId', accountID)
-//     localStorage.setItem('clientId', clientId)
-//     localStorage.setItem('apiKey', apiKey)
-//     swychApiService.login(data)
-//         .then((res: IGrantTokenResult) => {
-//             if (res.success) {
-//                 localStorage.setItem('access_token', res.access_token)
-//                 history.push('/home')
-//             }
-//         })
-//         .catch(err => {
-//             throw (err)
-//         })
-// }
 
 
 export default Login

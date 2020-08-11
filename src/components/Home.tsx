@@ -101,14 +101,7 @@ class Home extends React.Component {
                                                     <Form.Control type="text" value={this.state.orderDetails.recipientLastName} required placeholder="Last Name" maxLength={25} onChange={(event: any) => this.handleOrderDetailsUpdate(event.target.value, 'recipientLastName')} />
                                                     <Form.Control.Feedback type="invalid">Please provide last name.</Form.Control.Feedback>
                                                 </Form.Group>
-                                                {/* <Form.Group>
-                                                        <Form.Control as="select" onChange={this.handleOptionChange}>
-                                                            <option>Email</option>
-                                                            <option>Phone</option>
-                                                        </Form.Control>
-                                                    </Form.Group> */}
                                                 <Form.Group style={{ marginBottom: "-2px" }}>
-                                                    {/* <Form.Control plaintext readOnly defaultValue="Deliver by:" /> */}
                                                     <Form.Row>
                                                         <Col sm={4} md={4} lg={4}><Form.Control plaintext readOnly defaultValue="Deliver by:" /></Col>
                                                         <Col sm={8} md={8} lg={8} style={{ margin: "auto" }}>
@@ -132,17 +125,6 @@ class Home extends React.Component {
                                                             />
                                                         </Col>
                                                     </Form.Row>
-
-                                                    {/* <label>
-                                                            <input type="radio" name="optradio" />Email
-                                                            </label>
-                                                        <label>
-                                                            <input type="radio" name="optradio" />SMS
-                                                            </label>
-                                                        <label>
-                                                            <input type="radio" name="optradio" />Swych App
-                                                        </label> */}
-
                                                 </Form.Group>
                                                 {
                                                     this.state.option == "email" ?
